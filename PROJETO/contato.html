@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ViralWave | Galeria</title>
+    <title>ViralWave | Contato</title>
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
@@ -25,28 +25,37 @@
     </header>
 
     <main>
-        <h2>GALERIA</h2>
-        <p>Conheça alguns dos projetos e estratégias desenvolvidos pela nossa equipe:</p>
+        <h2>Fale Conosco</h2>
+        <p style="color: #2b6cb0; font-weight: bold;">Preencha os campos abaixo para entrarmos em contato:</p>
 
-        <div class="galeria">
-            <div class="imagens">
-                <img src="img/imagem1.png" alt="Estratégia de Marketing Digital ViralWave">
-                <h3>Posicionamento Digital</h3>
-                <p>Desenvolvimento de estratégias personalizadas de marketing e fortalecimento de marca.</p>
+        <form class="contato">
+            <div class="campo">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
             </div>
 
-            <div class="imagens">
-                <img src="img/imagem2.jpg" alt="Atendimento e Recepção na Agência">
-                <h3>Atendimento Consultivo</h3>
-                <p>Atendimento humanizado focado em compreender e solucionar as necessidades do cliente.</p>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
             </div>
 
-            <div class="imagens">
-                <img src="img/imagem3.png" alt="Reunião de Alinhamento de Campanhas">
-                <h3>Análise de Resultados</h3>
-                <p>Reuniões periódicas de alinhamento e apresentação transparente de métricas e ROI.</p>
+            <div class="campo">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999" required>
             </div>
+
+            <div class="campo">
+            <label for="assunto">Assunto:</label>
+            <input type="text" id="assunto" name="assunto" placeholder="Assunto" required>
         </div>
+
+        <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem"></textarea>
+        </div>
+        
+        <button type="submit" class="enviar">Enviar</button>
+        </form>
     </main>
 
     <footer id="rodape">
